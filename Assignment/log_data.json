@@ -1,0 +1,343 @@
+[
+  {
+    "timestamp": "2026-04-09T10:00:01", "log_id": "LOG-2001", "user_id": "DEV-11", "team": "Auth", "module_accessed": "Login Service", "action": "User Login Attempt",
+    "issue_detected": true, "issue_type": "Authentication Failure", "error_code": "401_UNAUTHORIZED", "error_message": "Invalid token or session expired",
+    "ticket": { "ticket_id": "TCK-6001", "priority": "High", "assigned_team": "Auth", "status": "Open" },
+    "system_metrics": { "response_time_ms": 1500, "cpu_usage_pct": 70, "memory_usage_mb": 850 }
+  },
+  {
+    "timestamp": "2026-04-09T10:05:10", "log_id": "LOG-2002", "user_id": "DEV-22", "team": "Backend", "module_accessed": "Order Service", "action": "Placing Order",
+    "issue_detected": true, "issue_type": "Database Failure", "error_code": "500_DB_ERROR", "error_message": "Connection timeout to MySQL",
+    "ticket": { "ticket_id": "TCK-6002", "priority": "Critical", "assigned_team": "Database", "status": "Open" },
+    "system_metrics": { "response_time_ms": 4000, "cpu_usage_pct": 85, "memory_usage_mb": 1600 }
+  },
+  {
+    "timestamp": "2026-04-09T10:07:45", "log_id": "LOG-2003", "user_id": "DEV-33", "team": "Frontend", "module_accessed": "Product Page", "action": "Page Load",
+    "issue_detected": true, "issue_type": "API Latency", "error_code": "504_TIMEOUT", "error_message": "Product API response delayed",
+    "ticket": { "ticket_id": "TCK-6003", "priority": "Medium", "assigned_team": "Backend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 5000, "cpu_usage_pct": 60, "memory_usage_mb": 900 }
+  },
+  {
+    "timestamp": "2026-04-09T10:10:12", "log_id": "LOG-2004", "user_id": "DEV-44", "team": "Payment", "module_accessed": "Payment Gateway", "action": "Transaction Processing",
+    "issue_detected": true, "issue_type": "Payment Failure", "error_code": "502_BAD_GATEWAY", "error_message": "Third-party payment service unavailable",
+    "ticket": { "ticket_id": "TCK-6004", "priority": "Critical", "assigned_team": "Payment", "status": "Open" },
+    "system_metrics": { "response_time_ms": 3500, "cpu_usage_pct": 88, "memory_usage_mb": 1400 }
+  },
+  {
+    "timestamp": "2026-04-09T10:12:30", "log_id": "LOG-2005", "user_id": "DEV-55", "team": "Infrastructure", "module_accessed": "Server Node", "action": "Monitoring",
+    "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "Application server crashed unexpectedly",
+    "ticket": { "ticket_id": "TCK-6005", "priority": "Critical", "assigned_team": "DevOps", "status": "Open" },
+    "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 0 }
+  },
+  {
+    "timestamp": "2026-04-09T10:15:00", "log_id": "LOG-2006", "user_id": "DEV-66", "team": "Security", "module_accessed": "Firewall", "action": "Traffic Analysis",
+    "issue_detected": true, "issue_type": "Security Threat", "error_code": "DDOS_ALERT", "error_message": "Unusual spike in traffic detected",
+    "ticket": { "ticket_id": "TCK-6006", "priority": "Critical", "assigned_team": "Security", "status": "Open" },
+    "system_metrics": { "response_time_ms": 200, "cpu_usage_pct": 95, "memory_usage_mb": 1800 }
+  },
+  {
+    "timestamp": "2026-04-09T10:18:22", "log_id": "LOG-2007", "user_id": "DEV-77", "team": "Backend", "module_accessed": "Cache Layer", "action": "Cache Fetch",
+    "issue_detected": true, "issue_type": "Cache Miss", "error_code": "CACHE_FAILURE", "error_message": "Redis cache not responding",
+    "ticket": { "ticket_id": "TCK-6007", "priority": "Medium", "assigned_team": "Backend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 1800, "cpu_usage_pct": 72, "memory_usage_mb": 1100 }
+  },
+  {
+    "timestamp": "2026-04-09T10:20:10", "log_id": "LOG-2008", "user_id": "DEV-88", "team": "Search", "module_accessed": "Search Engine", "action": "Search Query",
+    "issue_detected": true, "issue_type": "Indexing Error", "error_code": "SEARCH_FAIL", "error_message": "Elasticsearch index corrupted",
+    "ticket": { "ticket_id": "TCK-6008", "priority": "High", "assigned_team": "Search", "status": "Open" },
+    "system_metrics": { "response_time_ms": 2500, "cpu_usage_pct": 80, "memory_usage_mb": 1300 }
+  },
+  {
+    "timestamp": "2026-04-09T10:25:00", "log_id": "LOG-2009", "user_id": "DEV-99", "team": "Frontend", "module_accessed": "UI", "action": "Render Page",
+    "issue_detected": true, "issue_type": "UI Bug", "error_code": "UI_RENDER_FAIL", "error_message": "Button click not triggering event",
+    "ticket": { "ticket_id": "TCK-6009", "priority": "Low", "assigned_team": "Frontend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 900, "cpu_usage_pct": 50, "memory_usage_mb": 700 }
+  },
+  {
+    "timestamp": "2026-04-09T10:27:00", "log_id": "LOG-2010", "user_id": "DEV-12", "team": "Auth", "module_accessed": "Login Service", "action": "User Login Attempt",
+    "issue_detected": true, "issue_type": "Authentication Failure", "error_code": "401_UNAUTHORIZED", "error_message": "Password mismatch",
+    "ticket": { "ticket_id": "TCK-6010", "priority": "High", "assigned_team": "Auth", "status": "In Progress" },
+    "system_metrics": { "response_time_ms": 1200, "cpu_usage_pct": 65, "memory_usage_mb": 820 }
+  },
+  {
+    "timestamp": "2026-04-09T10:29:15", "log_id": "LOG-2011", "user_id": "DEV-23", "team": "Backend", "module_accessed": "Order Service", "action": "Placing Order",
+    "issue_detected": true, "issue_type": "Database Failure", "error_code": "500_DB_ERROR", "error_message": "Deadlock detected in MySQL",
+    "ticket": { "ticket_id": "TCK-6011", "priority": "Critical", "assigned_team": "Database", "status": "Open" },
+    "system_metrics": { "response_time_ms": 4500, "cpu_usage_pct": 90, "memory_usage_mb": 1700 }
+  },
+  {
+    "timestamp": "2026-04-09T10:31:00", "log_id": "LOG-2012", "user_id": "DEV-34", "team": "Frontend", "module_accessed": "Product Page", "action": "Page Load",
+    "issue_detected": true, "issue_type": "API Latency", "error_code": "504_TIMEOUT", "error_message": "Cart API unresponsive",
+    "ticket": { "ticket_id": "TCK-6012", "priority": "Medium", "assigned_team": "Backend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 5200, "cpu_usage_pct": 62, "memory_usage_mb": 950 }
+  },
+  {
+    "timestamp": "2026-04-09T10:33:10", "log_id": "LOG-2013", "user_id": "DEV-45", "team": "Payment", "module_accessed": "Payment Gateway", "action": "Transaction Processing",
+    "issue_detected": true, "issue_type": "Payment Failure", "error_code": "502_BAD_GATEWAY", "error_message": "Stripe API not reachable",
+    "ticket": { "ticket_id": "TCK-6013", "priority": "Critical", "assigned_team": "Payment", "status": "Open" },
+    "system_metrics": { "response_time_ms": 3800, "cpu_usage_pct": 87, "memory_usage_mb": 1450 }
+  },
+  {
+    "timestamp": "2026-04-09T10:35:00", "log_id": "LOG-2014", "user_id": "DEV-56", "team": "Infrastructure", "module_accessed": "Load Balancer", "action": "Monitoring",
+    "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "Load balancer node unreachable",
+    "ticket": { "ticket_id": "TCK-6014", "priority": "Critical", "assigned_team": "DevOps", "status": "Open" },
+    "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 0 }
+  },
+  {
+    "timestamp": "2026-04-09T10:37:20", "log_id": "LOG-2015", "user_id": "DEV-67", "team": "Security", "module_accessed": "Firewall", "action": "Traffic Analysis",
+    "issue_detected": true, "issue_type": "Security Threat", "error_code": "DDOS_ALERT", "error_message": "IP flood from multiple sources",
+    "ticket": { "ticket_id": "TCK-6015", "priority": "Critical", "assigned_team": "Security", "status": "In Progress" },
+    "system_metrics": { "response_time_ms": 180, "cpu_usage_pct": 97, "memory_usage_mb": 1900 }
+  },
+  {
+    "timestamp": "2026-04-09T10:39:00", "log_id": "LOG-2016", "user_id": "DEV-78", "team": "Backend", "module_accessed": "Cache Layer", "action": "Cache Fetch",
+    "issue_detected": true, "issue_type": "Cache Miss", "error_code": "CACHE_FAILURE", "error_message": "Cache eviction rate too high",
+    "ticket": { "ticket_id": "TCK-6016", "priority": "Medium", "assigned_team": "Backend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 1900, "cpu_usage_pct": 74, "memory_usage_mb": 1050 }
+  },
+  {
+    "timestamp": "2026-04-09T10:41:30", "log_id": "LOG-2017", "user_id": "DEV-89", "team": "Search", "module_accessed": "Search Engine", "action": "Search Query",
+    "issue_detected": true, "issue_type": "Indexing Error", "error_code": "SEARCH_FAIL", "error_message": "Elasticsearch cluster unreachable",
+    "ticket": { "ticket_id": "TCK-6017", "priority": "High", "assigned_team": "Search", "status": "Open" },
+    "system_metrics": { "response_time_ms": 2700, "cpu_usage_pct": 82, "memory_usage_mb": 1350 }
+  },
+  {
+    "timestamp": "2026-04-09T10:43:00", "log_id": "LOG-2018", "user_id": "DEV-91", "team": "Frontend", "module_accessed": "UI", "action": "Render Page",
+    "issue_detected": true, "issue_type": "UI Bug", "error_code": "UI_RENDER_FAIL", "error_message": "CSS stylesheet not loading",
+    "ticket": { "ticket_id": "TCK-6018", "priority": "Low", "assigned_team": "Frontend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 850, "cpu_usage_pct": 48, "memory_usage_mb": 680 }
+  },
+  {
+    "timestamp": "2026-04-09T10:45:10", "log_id": "LOG-2019", "user_id": "DEV-13", "team": "Auth", "module_accessed": "OAuth Service", "action": "Token Refresh",
+    "issue_detected": true, "issue_type": "Authentication Failure", "error_code": "401_UNAUTHORIZED", "error_message": "Refresh token expired",
+    "ticket": { "ticket_id": "TCK-6019", "priority": "High", "assigned_team": "Auth", "status": "Open" },
+    "system_metrics": { "response_time_ms": 1100, "cpu_usage_pct": 68, "memory_usage_mb": 800 }
+  },
+  {
+    "timestamp": "2026-04-09T10:47:00", "log_id": "LOG-2020", "user_id": "DEV-24", "team": "Backend", "module_accessed": "Inventory Service", "action": "Stock Update",
+    "issue_detected": true, "issue_type": "Database Failure", "error_code": "500_DB_ERROR", "error_message": "PostgreSQL replication lag too high",
+    "ticket": { "ticket_id": "TCK-6020", "priority": "Critical", "assigned_team": "Database", "status": "Open" },
+    "system_metrics": { "response_time_ms": 4200, "cpu_usage_pct": 88, "memory_usage_mb": 1650 }
+  },
+  {
+    "timestamp": "2026-04-09T10:49:30", "log_id": "LOG-2021", "user_id": "DEV-35", "team": "Frontend", "module_accessed": "Checkout Page", "action": "Page Load",
+    "issue_detected": true, "issue_type": "API Latency", "error_code": "504_TIMEOUT", "error_message": "Checkout API timed out",
+    "ticket": { "ticket_id": "TCK-6021", "priority": "Medium", "assigned_team": "Backend", "status": "In Progress" },
+    "system_metrics": { "response_time_ms": 5500, "cpu_usage_pct": 63, "memory_usage_mb": 920 }
+  },
+  {
+    "timestamp": "2026-04-09T10:51:00", "log_id": "LOG-2022", "user_id": "DEV-46", "team": "Payment", "module_accessed": "Refund Service", "action": "Refund Processing",
+    "issue_detected": true, "issue_type": "Payment Failure", "error_code": "502_BAD_GATEWAY", "error_message": "Refund gateway timeout",
+    "ticket": { "ticket_id": "TCK-6022", "priority": "Critical", "assigned_team": "Payment", "status": "Open" },
+    "system_metrics": { "response_time_ms": 3600, "cpu_usage_pct": 86, "memory_usage_mb": 1380 }
+  },
+  {
+    "timestamp": "2026-04-09T10:53:20", "log_id": "LOG-2023", "user_id": "DEV-57", "team": "Infrastructure", "module_accessed": "CDN", "action": "Monitoring",
+    "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "CDN edge node down",
+    "ticket": { "ticket_id": "TCK-6023", "priority": "Critical", "assigned_team": "DevOps", "status": "Open" },
+    "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 0 }
+  },
+  {
+    "timestamp": "2026-04-09T10:55:00", "log_id": "LOG-2024", "user_id": "DEV-68", "team": "Security", "module_accessed": "Firewall", "action": "Traffic Analysis",
+    "issue_detected": true, "issue_type": "Security Threat", "error_code": "DDOS_ALERT", "error_message": "SYN flood attack detected",
+    "ticket": { "ticket_id": "TCK-6024", "priority": "Critical", "assigned_team": "Security", "status": "Open" },
+    "system_metrics": { "response_time_ms": 210, "cpu_usage_pct": 96, "memory_usage_mb": 1850 }
+  },
+  {
+    "timestamp": "2026-04-09T10:57:10", "log_id": "LOG-2025", "user_id": "DEV-79", "team": "Backend", "module_accessed": "Cache Layer", "action": "Cache Write",
+    "issue_detected": true, "issue_type": "Cache Miss", "error_code": "CACHE_FAILURE", "error_message": "Redis memory limit exceeded",
+    "ticket": { "ticket_id": "TCK-6025", "priority": "Medium", "assigned_team": "Backend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 1750, "cpu_usage_pct": 71, "memory_usage_mb": 1120 }
+  },
+  {
+    "timestamp": "2026-04-09T10:59:00", "log_id": "LOG-2026", "user_id": "DEV-92", "team": "Search", "module_accessed": "Search Engine", "action": "Index Rebuild",
+    "issue_detected": true, "issue_type": "Indexing Error", "error_code": "SEARCH_FAIL", "error_message": "Index rebuild failed mid-process",
+    "ticket": { "ticket_id": "TCK-6026", "priority": "High", "assigned_team": "Search", "status": "In Progress" },
+    "system_metrics": { "response_time_ms": 2600, "cpu_usage_pct": 81, "memory_usage_mb": 1280 }
+  },
+  {
+    "timestamp": "2026-04-09T11:01:00", "log_id": "LOG-2027", "user_id": "DEV-14", "team": "Frontend", "module_accessed": "Dashboard", "action": "Render Page",
+    "issue_detected": true, "issue_type": "UI Bug", "error_code": "UI_RENDER_FAIL", "error_message": "Chart component not rendering",
+    "ticket": { "ticket_id": "TCK-6027", "priority": "Low", "assigned_team": "Frontend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 870, "cpu_usage_pct": 52, "memory_usage_mb": 720 }
+  },
+  {
+    "timestamp": "2026-04-09T11:03:10", "log_id": "LOG-2028", "user_id": "DEV-25", "team": "Auth", "module_accessed": "SSO Service", "action": "SSO Login",
+    "issue_detected": true, "issue_type": "Authentication Failure", "error_code": "401_UNAUTHORIZED", "error_message": "SAML assertion invalid",
+    "ticket": { "ticket_id": "TCK-6028", "priority": "High", "assigned_team": "Auth", "status": "Open" },
+    "system_metrics": { "response_time_ms": 1300, "cpu_usage_pct": 66, "memory_usage_mb": 830 }
+  },
+  {
+    "timestamp": "2026-04-09T11:05:00", "log_id": "LOG-2029", "user_id": "DEV-36", "team": "Backend", "module_accessed": "Notification Service", "action": "Send Email",
+    "issue_detected": true, "issue_type": "Database Failure", "error_code": "500_DB_ERROR", "error_message": "Email queue table locked",
+    "ticket": { "ticket_id": "TCK-6029", "priority": "Critical", "assigned_team": "Database", "status": "Open" },
+    "system_metrics": { "response_time_ms": 4100, "cpu_usage_pct": 89, "memory_usage_mb": 1580 }
+  },
+  {
+    "timestamp": "2026-04-09T11:07:20", "log_id": "LOG-2030", "user_id": "DEV-47", "team": "Frontend", "module_accessed": "Home Page", "action": "Page Load",
+    "issue_detected": true, "issue_type": "API Latency", "error_code": "504_TIMEOUT", "error_message": "Banner API not responding",
+    "ticket": { "ticket_id": "TCK-6030", "priority": "Medium", "assigned_team": "Backend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 4900, "cpu_usage_pct": 61, "memory_usage_mb": 910 }
+  },
+  {
+    "timestamp": "2026-04-09T11:09:00", "log_id": "LOG-2031", "user_id": "DEV-58", "team": "Payment", "module_accessed": "Invoice Service", "action": "Invoice Generation",
+    "issue_detected": true, "issue_type": "Payment Failure", "error_code": "502_BAD_GATEWAY", "error_message": "Invoice PDF service down",
+    "ticket": { "ticket_id": "TCK-6031", "priority": "Critical", "assigned_team": "Payment", "status": "Open" },
+    "system_metrics": { "response_time_ms": 3400, "cpu_usage_pct": 85, "memory_usage_mb": 1420 }
+  },
+  {
+    "timestamp": "2026-04-09T11:11:10", "log_id": "LOG-2032", "user_id": "DEV-69", "team": "Infrastructure", "module_accessed": "Database Node", "action": "Monitoring",
+    "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "Primary DB node crashed",
+    "ticket": { "ticket_id": "TCK-6032", "priority": "Critical", "assigned_team": "DevOps", "status": "Open" },
+    "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 0 }
+  },
+  {
+    "timestamp": "2026-04-09T11:13:00", "log_id": "LOG-2033", "user_id": "DEV-80", "team": "Security", "module_accessed": "Intrusion Detection", "action": "Log Analysis",
+    "issue_detected": true, "issue_type": "Security Threat", "error_code": "DDOS_ALERT", "error_message": "Suspicious payload injection attempt",
+    "ticket": { "ticket_id": "TCK-6033", "priority": "Critical", "assigned_team": "Security", "status": "In Progress" },
+    "system_metrics": { "response_time_ms": 190, "cpu_usage_pct": 94, "memory_usage_mb": 1780 }
+  },
+  {
+    "timestamp": "2026-04-09T11:15:20", "log_id": "LOG-2034", "user_id": "DEV-93", "team": "Backend", "module_accessed": "Session Service", "action": "Session Validation",
+    "issue_detected": true, "issue_type": "Cache Miss", "error_code": "CACHE_FAILURE", "error_message": "Session token not found in cache",
+    "ticket": { "ticket_id": "TCK-6034", "priority": "Medium", "assigned_team": "Backend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 1820, "cpu_usage_pct": 73, "memory_usage_mb": 1080 }
+  },
+  {
+    "timestamp": "2026-04-09T11:17:00", "log_id": "LOG-2035", "user_id": "DEV-15", "team": "Search", "module_accessed": "Autocomplete", "action": "Search Query",
+    "issue_detected": true, "issue_type": "Indexing Error", "error_code": "SEARCH_FAIL", "error_message": "Autocomplete index stale",
+    "ticket": { "ticket_id": "TCK-6035", "priority": "High", "assigned_team": "Search", "status": "Open" },
+    "system_metrics": { "response_time_ms": 2400, "cpu_usage_pct": 79, "memory_usage_mb": 1260 }
+  },
+  {
+    "timestamp": "2026-04-09T11:19:10", "log_id": "LOG-2036", "user_id": "DEV-26", "team": "Frontend", "module_accessed": "Settings Page", "action": "Render Page",
+    "issue_detected": true, "issue_type": "UI Bug", "error_code": "UI_RENDER_FAIL", "error_message": "Toggle switch state not saving",
+    "ticket": { "ticket_id": "TCK-6036", "priority": "Low", "assigned_team": "Frontend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 920, "cpu_usage_pct": 49, "memory_usage_mb": 710 }
+  },
+  {
+    "timestamp": "2026-04-09T11:21:00", "log_id": "LOG-2037", "user_id": "DEV-37", "team": "Auth", "module_accessed": "MFA Service", "action": "OTP Verification",
+    "issue_detected": true, "issue_type": "Authentication Failure", "error_code": "401_UNAUTHORIZED", "error_message": "OTP expired before validation",
+    "ticket": { "ticket_id": "TCK-6037", "priority": "High", "assigned_team": "Auth", "status": "Open" },
+    "system_metrics": { "response_time_ms": 1400, "cpu_usage_pct": 69, "memory_usage_mb": 840 }
+  },
+  {
+    "timestamp": "2026-04-09T11:23:20", "log_id": "LOG-2038", "user_id": "DEV-48", "team": "Backend", "module_accessed": "User Service", "action": "Profile Update",
+    "issue_detected": true, "issue_type": "Database Failure", "error_code": "500_DB_ERROR", "error_message": "User table write failed",
+    "ticket": { "ticket_id": "TCK-6038", "priority": "Critical", "assigned_team": "Database", "status": "Open" },
+    "system_metrics": { "response_time_ms": 4300, "cpu_usage_pct": 87, "memory_usage_mb": 1620 }
+  },
+  {
+    "timestamp": "2026-04-09T11:25:00", "log_id": "LOG-2039", "user_id": "DEV-59", "team": "Frontend", "module_accessed": "Category Page", "action": "Page Load",
+    "issue_detected": true, "issue_type": "API Latency", "error_code": "504_TIMEOUT", "error_message": "Category listing API delayed",
+    "ticket": { "ticket_id": "TCK-6039", "priority": "Medium", "assigned_team": "Backend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 5100, "cpu_usage_pct": 64, "memory_usage_mb": 940 }
+  },
+  {
+    "timestamp": "2026-04-09T11:27:10", "log_id": "LOG-2040", "user_id": "DEV-70", "team": "Payment", "module_accessed": "Subscription Service", "action": "Subscription Renewal",
+    "issue_detected": true, "issue_type": "Payment Failure", "error_code": "502_BAD_GATEWAY", "error_message": "Subscription renewal charge failed",
+    "ticket": { "ticket_id": "TCK-6040", "priority": "Critical", "assigned_team": "Payment", "status": "Open" },
+    "system_metrics": { "response_time_ms": 3700, "cpu_usage_pct": 89, "memory_usage_mb": 1460 }
+  },
+  {
+    "timestamp": "2026-04-09T11:29:00", "log_id": "LOG-2041", "user_id": "DEV-81", "team": "Infrastructure", "module_accessed": "Message Queue", "action": "Monitoring",
+    "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "RabbitMQ broker crashed",
+    "ticket": { "ticket_id": "TCK-6041", "priority": "Critical", "assigned_team": "DevOps", "status": "In Progress" },
+    "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 0 }
+  },
+  {
+    "timestamp": "2026-04-09T11:31:20", "log_id": "LOG-2042", "user_id": "DEV-94", "team": "Security", "module_accessed": "API Gateway", "action": "Traffic Analysis",
+    "issue_detected": true, "issue_type": "Security Threat", "error_code": "DDOS_ALERT", "error_message": "Abnormal API call volume detected",
+    "ticket": { "ticket_id": "TCK-6042", "priority": "Critical", "assigned_team": "Security", "status": "Open" },
+    "system_metrics": { "response_time_ms": 220, "cpu_usage_pct": 93, "memory_usage_mb": 1760 }
+  },
+  {
+    "timestamp": "2026-04-09T11:33:00", "log_id": "LOG-2043", "user_id": "DEV-16", "team": "Backend", "module_accessed": "Rate Limiter", "action": "Request Throttle",
+    "issue_detected": true, "issue_type": "Cache Miss", "error_code": "CACHE_FAILURE", "error_message": "Rate limit counters lost from cache",
+    "ticket": { "ticket_id": "TCK-6043", "priority": "Medium", "assigned_team": "Backend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 1860, "cpu_usage_pct": 75, "memory_usage_mb": 1090 }
+  },
+  {
+    "timestamp": "2026-04-09T11:35:10", "log_id": "LOG-2044", "user_id": "DEV-27", "team": "Search", "module_accessed": "Filter Service", "action": "Search Query",
+    "issue_detected": true, "issue_type": "Indexing Error", "error_code": "SEARCH_FAIL", "error_message": "Filter facet index unavailable",
+    "ticket": { "ticket_id": "TCK-6044", "priority": "High", "assigned_team": "Search", "status": "Open" },
+    "system_metrics": { "response_time_ms": 2800, "cpu_usage_pct": 83, "memory_usage_mb": 1320 }
+  },
+  {
+    "timestamp": "2026-04-09T11:37:00", "log_id": "LOG-2045", "user_id": "DEV-38", "team": "Frontend", "module_accessed": "Profile Page", "action": "Render Page",
+    "issue_detected": true, "issue_type": "UI Bug", "error_code": "UI_RENDER_FAIL", "error_message": "Profile image not loading",
+    "ticket": { "ticket_id": "TCK-6045", "priority": "Low", "assigned_team": "Frontend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 890, "cpu_usage_pct": 51, "memory_usage_mb": 690 }
+  },
+  {
+    "timestamp": "2026-04-09T11:39:20", "log_id": "LOG-2046", "user_id": "DEV-49", "team": "Auth", "module_accessed": "Login Service", "action": "User Login Attempt",
+    "issue_detected": true, "issue_type": "Authentication Failure", "error_code": "401_UNAUTHORIZED", "error_message": "Account temporarily locked",
+    "ticket": { "ticket_id": "TCK-6046", "priority": "High", "assigned_team": "Auth", "status": "In Progress" },
+    "system_metrics": { "response_time_ms": 1250, "cpu_usage_pct": 67, "memory_usage_mb": 810 }
+  },
+  {
+    "timestamp": "2026-04-09T11:41:00", "log_id": "LOG-2047", "user_id": "DEV-60", "team": "Backend", "module_accessed": "Analytics Service", "action": "Data Aggregation",
+    "issue_detected": true, "issue_type": "Database Failure", "error_code": "500_DB_ERROR", "error_message": "Analytics DB out of disk space",
+    "ticket": { "ticket_id": "TCK-6047", "priority": "Critical", "assigned_team": "Database", "status": "Open" },
+    "system_metrics": { "response_time_ms": 4600, "cpu_usage_pct": 91, "memory_usage_mb": 1680 }
+  },
+  {
+    "timestamp": "2026-04-09T11:43:10", "log_id": "LOG-2048", "user_id": "DEV-71", "team": "Frontend", "module_accessed": "Orders Page", "action": "Page Load",
+    "issue_detected": true, "issue_type": "API Latency", "error_code": "504_TIMEOUT", "error_message": "Order history API slow",
+    "ticket": { "ticket_id": "TCK-6048", "priority": "Medium", "assigned_team": "Backend", "status": "Open" },
+    "system_metrics": { "response_time_ms": 5300, "cpu_usage_pct": 65, "memory_usage_mb": 960 }
+  },
+  {
+    "timestamp": "2026-04-09T11:45:00", "log_id": "LOG-2049", "user_id": "DEV-82", "team": "Payment", "module_accessed": "Wallet Service", "action": "Wallet Top-Up",
+    "issue_detected": true, "issue_type": "Payment Failure", "error_code": "502_BAD_GATEWAY", "error_message": "Wallet API gateway error",
+    "ticket": { "ticket_id": "TCK-6049", "priority": "Critical", "assigned_team": "Payment", "status": "Open" },
+    "system_metrics": { "response_time_ms": 3900, "cpu_usage_pct": 90, "memory_usage_mb": 1500 }
+  },
+  {
+    "timestamp": "2026-04-09T11:47:20", "log_id": "LOG-2050", "user_id": "DEV-95", "team": "Infrastructure", "module_accessed": "Kubernetes Cluster", "action": "Pod Scheduling",
+    "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "Kubernetes pod OOMKilled",
+    "ticket": { "ticket_id": "TCK-6050", "priority": "Critical", "assigned_team": "DevOps", "status": "Open" },
+    "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 0 }
+  },
+
+  { "timestamp": "2026-04-09T17:05:30", "log_id": "LOG-OUT-001", "user_id": "DEV-11", "team": "Infrastructure", "module_accessed": "Server Node", "action": "Monitoring", "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "Full data center power failure — all nodes offline", "ticket": { "ticket_id": "TCK-OUT-001", "priority": "Critical", "assigned_team": "DevOps", "status": "Open" }, "system_metrics": { "response_time_ms": 98000, "cpu_usage_pct": 100, "memory_usage_mb": 32000 } },
+  { "timestamp": "2026-04-09T17:07:00", "log_id": "LOG-OUT-002", "user_id": "DEV-22", "team": "Security", "module_accessed": "Firewall", "action": "Traffic Analysis", "issue_detected": true, "issue_type": "Security Threat", "error_code": "DDOS_ALERT", "error_message": "Massive DDoS attack — 10M requests per second hitting edge", "ticket": { "ticket_id": "TCK-OUT-002", "priority": "Critical", "assigned_team": "Security", "status": "Open" }, "system_metrics": { "response_time_ms": 1, "cpu_usage_pct": 100, "memory_usage_mb": 31800 } },
+  { "timestamp": "2026-04-09T17:09:15", "log_id": "LOG-OUT-003", "user_id": "DEV-33", "team": "Backend", "module_accessed": "Order Service", "action": "Placing Order", "issue_detected": true, "issue_type": "Database Failure", "error_code": "500_DB_ERROR", "error_message": "MySQL disk 100% full — all writes hard failing across cluster", "ticket": { "ticket_id": "TCK-OUT-003", "priority": "Critical", "assigned_team": "Database", "status": "Open" }, "system_metrics": { "response_time_ms": 55000, "cpu_usage_pct": 99, "memory_usage_mb": 29800 } },
+  { "timestamp": "2026-04-09T17:11:00", "log_id": "LOG-OUT-004", "user_id": "DEV-44", "team": "Payment", "module_accessed": "Payment Gateway", "action": "Transaction Processing", "issue_detected": true, "issue_type": "Payment Failure", "error_code": "502_BAD_GATEWAY", "error_message": "All payment processors simultaneously unreachable for 30 minutes", "ticket": { "ticket_id": "TCK-OUT-004", "priority": "Critical", "assigned_team": "Payment", "status": "Open" }, "system_metrics": { "response_time_ms": 75000, "cpu_usage_pct": 97, "memory_usage_mb": 27500 } },
+  { "timestamp": "2026-04-09T17:13:30", "log_id": "LOG-OUT-005", "user_id": "DEV-55", "team": "Infrastructure", "module_accessed": "Kubernetes Cluster", "action": "Pod Scheduling", "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "Entire Kubernetes node pool evicted — zero running pods", "ticket": { "ticket_id": "TCK-OUT-005", "priority": "Critical", "assigned_team": "DevOps", "status": "Open" }, "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 0 } },
+  { "timestamp": "2026-04-09T17:15:00", "log_id": "LOG-OUT-006", "user_id": "DEV-66", "team": "Auth", "module_accessed": "Login Service", "action": "User Login Attempt", "issue_detected": true, "issue_type": "Authentication Failure", "error_code": "401_UNAUTHORIZED", "error_message": "Auth service completely unresponsive — 500k failed logins queued", "ticket": { "ticket_id": "TCK-OUT-006", "priority": "Critical", "assigned_team": "Auth", "status": "Open" }, "system_metrics": { "response_time_ms": 89000, "cpu_usage_pct": 100, "memory_usage_mb": 31200 } },
+  { "timestamp": "2026-04-09T17:17:10", "log_id": "LOG-OUT-007", "user_id": "DEV-77", "team": "Search", "module_accessed": "Search Engine", "action": "Search Query", "issue_detected": true, "issue_type": "Indexing Error", "error_code": "SEARCH_FAIL", "error_message": "Elasticsearch split-brain event — all primary shards lost", "ticket": { "ticket_id": "TCK-OUT-007", "priority": "Critical", "assigned_team": "Search", "status": "Open" }, "system_metrics": { "response_time_ms": 62000, "cpu_usage_pct": 98, "memory_usage_mb": 28900 } },
+  { "timestamp": "2026-04-09T17:19:00", "log_id": "LOG-OUT-008", "user_id": "DEV-88", "team": "Backend", "module_accessed": "Cache Layer", "action": "Cache Fetch", "issue_detected": true, "issue_type": "Cache Miss", "error_code": "CACHE_FAILURE", "error_message": "Redis cluster OOM crash — complete in-memory data loss", "ticket": { "ticket_id": "TCK-OUT-008", "priority": "Critical", "assigned_team": "Backend", "status": "Open" }, "system_metrics": { "response_time_ms": 47000, "cpu_usage_pct": 96, "memory_usage_mb": 32000 } },
+  { "timestamp": "2026-04-09T17:21:20", "log_id": "LOG-OUT-009", "user_id": "DEV-99", "team": "Frontend", "module_accessed": "Product Page", "action": "Page Load", "issue_detected": true, "issue_type": "API Latency", "error_code": "504_TIMEOUT", "error_message": "CDN completely offline — all static assets returning 503", "ticket": { "ticket_id": "TCK-OUT-009", "priority": "Critical", "assigned_team": "Frontend", "status": "Open" }, "system_metrics": { "response_time_ms": 83000, "cpu_usage_pct": 95, "memory_usage_mb": 26000 } },
+  { "timestamp": "2026-04-09T17:23:00", "log_id": "LOG-OUT-010", "user_id": "DEV-12", "team": "Infrastructure", "module_accessed": "Database Node", "action": "Monitoring", "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "Primary and all replica DBs down simultaneously — full outage", "ticket": { "ticket_id": "TCK-OUT-010", "priority": "Critical", "assigned_team": "DevOps", "status": "Open" }, "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 0 } },
+  { "timestamp": "2026-04-09T17:25:10", "log_id": "LOG-OUT-011", "user_id": "DEV-23", "team": "Security", "module_accessed": "Intrusion Detection", "action": "Log Analysis", "issue_detected": true, "issue_type": "Security Threat", "error_code": "DDOS_ALERT", "error_message": "Nation-state intrusion — root access obtained on 12 servers", "ticket": { "ticket_id": "TCK-OUT-011", "priority": "Critical", "assigned_team": "Security", "status": "In Progress" }, "system_metrics": { "response_time_ms": 3, "cpu_usage_pct": 100, "memory_usage_mb": 31800 } },
+  { "timestamp": "2026-04-09T17:27:00", "log_id": "LOG-OUT-012", "user_id": "DEV-34", "team": "Payment", "module_accessed": "Fraud Detection", "action": "Transaction Screening", "issue_detected": true, "issue_type": "Payment Failure", "error_code": "502_BAD_GATEWAY", "error_message": "Fraud model memory overflow — all transactions passing unscreened", "ticket": { "ticket_id": "TCK-OUT-012", "priority": "Critical", "assigned_team": "Payment", "status": "Open" }, "system_metrics": { "response_time_ms": 71000, "cpu_usage_pct": 99, "memory_usage_mb": 32000 } },
+  { "timestamp": "2026-04-09T17:29:20", "log_id": "LOG-OUT-013", "user_id": "DEV-45", "team": "Backend", "module_accessed": "Notification Service", "action": "Send Email", "issue_detected": true, "issue_type": "Database Failure", "error_code": "500_DB_ERROR", "error_message": "Email queue deadlock — 2M emails stuck, no consumer processing", "ticket": { "ticket_id": "TCK-OUT-013", "priority": "Critical", "assigned_team": "Database", "status": "Open" }, "system_metrics": { "response_time_ms": 58000, "cpu_usage_pct": 97, "memory_usage_mb": 29200 } },
+  { "timestamp": "2026-04-09T17:31:00", "log_id": "LOG-OUT-014", "user_id": "DEV-56", "team": "Frontend", "module_accessed": "Checkout Page", "action": "Page Load", "issue_detected": true, "issue_type": "API Latency", "error_code": "504_TIMEOUT", "error_message": "Checkout service completely frozen — zero transactions completing", "ticket": { "ticket_id": "TCK-OUT-014", "priority": "Critical", "assigned_team": "Backend", "status": "Open" }, "system_metrics": { "response_time_ms": 91000, "cpu_usage_pct": 98, "memory_usage_mb": 27800 } },
+  { "timestamp": "2026-04-09T17:33:10", "log_id": "LOG-OUT-015", "user_id": "DEV-67", "team": "Infrastructure", "module_accessed": "CDN", "action": "Monitoring", "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "CDN provider full regional outage — 100% traffic loss for 45 min", "ticket": { "ticket_id": "TCK-OUT-015", "priority": "Critical", "assigned_team": "DevOps", "status": "Open" }, "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 0 } },
+  { "timestamp": "2026-04-09T17:35:00", "log_id": "LOG-OUT-016", "user_id": "DEV-78", "team": "Auth", "module_accessed": "OAuth Service", "action": "Token Generation", "issue_detected": true, "issue_type": "Authentication Failure", "error_code": "401_UNAUTHORIZED", "error_message": "Private signing key leaked and rotated — all active tokens invalid", "ticket": { "ticket_id": "TCK-OUT-016", "priority": "Critical", "assigned_team": "Auth", "status": "In Progress" }, "system_metrics": { "response_time_ms": 86000, "cpu_usage_pct": 100, "memory_usage_mb": 30200 } },
+  { "timestamp": "2026-04-09T17:37:20", "log_id": "LOG-OUT-017", "user_id": "DEV-89", "team": "Search", "module_accessed": "Search Engine", "action": "Index Rebuild", "issue_detected": true, "issue_type": "Indexing Error", "error_code": "SEARCH_FAIL", "error_message": "Full production index deleted mid-rebuild — search completely dark", "ticket": { "ticket_id": "TCK-OUT-017", "priority": "Critical", "assigned_team": "Search", "status": "Open" }, "system_metrics": { "response_time_ms": 64000, "cpu_usage_pct": 99, "memory_usage_mb": 29500 } },
+  { "timestamp": "2026-04-09T17:39:00", "log_id": "LOG-OUT-018", "user_id": "DEV-91", "team": "Backend", "module_accessed": "Analytics Service", "action": "Data Aggregation", "issue_detected": true, "issue_type": "Database Failure", "error_code": "500_DB_ERROR", "error_message": "Analytics JVM heap explosion — full GC loop, service unresponsive", "ticket": { "ticket_id": "TCK-OUT-018", "priority": "Critical", "assigned_team": "Database", "status": "Open" }, "system_metrics": { "response_time_ms": 52000, "cpu_usage_pct": 100, "memory_usage_mb": 32000 } },
+  { "timestamp": "2026-04-09T17:41:10", "log_id": "LOG-OUT-019", "user_id": "DEV-13", "team": "Payment", "module_accessed": "Card Tokenization", "action": "Card Tokenize", "issue_detected": true, "issue_type": "Payment Failure", "error_code": "502_BAD_GATEWAY", "error_message": "PCI vault storage corrupted — tokenized card data inaccessible", "ticket": { "ticket_id": "TCK-OUT-019", "priority": "Critical", "assigned_team": "Payment", "status": "Open" }, "system_metrics": { "response_time_ms": 78000, "cpu_usage_pct": 98, "memory_usage_mb": 28400 } },
+  { "timestamp": "2026-04-09T17:43:00", "log_id": "LOG-OUT-020", "user_id": "DEV-24", "team": "Infrastructure", "module_accessed": "Message Queue", "action": "Monitoring", "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "Kafka cluster total failure — 50M messages lost, consumers dead", "ticket": { "ticket_id": "TCK-OUT-020", "priority": "Critical", "assigned_team": "DevOps", "status": "Open" }, "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 0 } },
+  { "timestamp": "2026-04-09T17:45:20", "log_id": "LOG-OUT-021", "user_id": "DEV-35", "team": "Security", "module_accessed": "WAF", "action": "Traffic Analysis", "issue_detected": true, "issue_type": "Security Threat", "error_code": "DDOS_ALERT", "error_message": "WAF bypassed via zero-day — exploit active in production for 2h", "ticket": { "ticket_id": "TCK-OUT-021", "priority": "Critical", "assigned_team": "Security", "status": "In Progress" }, "system_metrics": { "response_time_ms": 5, "cpu_usage_pct": 100, "memory_usage_mb": 31500 } },
+  { "timestamp": "2026-04-09T17:47:00", "log_id": "LOG-OUT-022", "user_id": "DEV-46", "team": "Backend", "module_accessed": "User Service", "action": "Profile Update", "issue_detected": true, "issue_type": "Database Failure", "error_code": "500_DB_ERROR", "error_message": "User table corruption — 1M rows permanently lost, no backup available", "ticket": { "ticket_id": "TCK-OUT-022", "priority": "Critical", "assigned_team": "Database", "status": "Open" }, "system_metrics": { "response_time_ms": 66000, "cpu_usage_pct": 99, "memory_usage_mb": 30800 } },
+  { "timestamp": "2026-04-09T17:49:10", "log_id": "LOG-OUT-023", "user_id": "DEV-57", "team": "Frontend", "module_accessed": "UI", "action": "Render Page", "issue_detected": true, "issue_type": "UI Bug", "error_code": "UI_RENDER_FAIL", "error_message": "JS bundle completely missing — full white screen across all users globally", "ticket": { "ticket_id": "TCK-OUT-023", "priority": "Critical", "assigned_team": "Frontend", "status": "Open" }, "system_metrics": { "response_time_ms": 45000, "cpu_usage_pct": 93, "memory_usage_mb": 25500 } },
+  { "timestamp": "2026-04-09T17:51:00", "log_id": "LOG-OUT-024", "user_id": "DEV-68", "team": "Infrastructure", "module_accessed": "Load Balancer", "action": "Monitoring", "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "All load balancer nodes dead — complete service blackout across regions", "ticket": { "ticket_id": "TCK-OUT-024", "priority": "Critical", "assigned_team": "DevOps", "status": "Open" }, "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 0 } },
+  { "timestamp": "2026-04-09T17:53:20", "log_id": "LOG-OUT-025", "user_id": "DEV-79", "team": "Payment", "module_accessed": "Subscription Service", "action": "Subscription Renewal", "issue_detected": true, "issue_type": "Payment Failure", "error_code": "502_BAD_GATEWAY", "error_message": "Mass double-charge event — 100k users billed twice in 5 minutes", "ticket": { "ticket_id": "TCK-OUT-025", "priority": "Critical", "assigned_team": "Payment", "status": "In Progress" }, "system_metrics": { "response_time_ms": 82000, "cpu_usage_pct": 97, "memory_usage_mb": 29000 } },
+  { "timestamp": "2026-04-09T17:55:00", "log_id": "LOG-OUT-026", "user_id": "DEV-80", "team": "Backend", "module_accessed": "Report Service", "action": "Report Generation", "issue_detected": true, "issue_type": "Database Failure", "error_code": "500_DB_ERROR", "error_message": "Report generation triggered 100% CPU spiral — server unresponsive for 1h", "ticket": { "ticket_id": "TCK-OUT-026", "priority": "Critical", "assigned_team": "Database", "status": "Open" }, "system_metrics": { "response_time_ms": 93000, "cpu_usage_pct": 100, "memory_usage_mb": 31600 } },
+  { "timestamp": "2026-04-09T17:57:10", "log_id": "LOG-OUT-027", "user_id": "DEV-92", "team": "Auth", "module_accessed": "Login Service", "action": "User Login Attempt", "issue_detected": true, "issue_type": "Authentication Failure", "error_code": "401_UNAUTHORIZED", "error_message": "Credential stuffing bot bypassed rate limiter — 2M login attempts in 1min", "ticket": { "ticket_id": "TCK-OUT-027", "priority": "Critical", "assigned_team": "Auth", "status": "Open" }, "system_metrics": { "response_time_ms": 79000, "cpu_usage_pct": 100, "memory_usage_mb": 30500 } },
+  { "timestamp": "2026-04-09T17:59:00", "log_id": "LOG-OUT-028", "user_id": "DEV-14", "team": "Security", "module_accessed": "Data Loss Prevention", "action": "Data Scan", "issue_detected": true, "issue_type": "Security Threat", "error_code": "DDOS_ALERT", "error_message": "Bulk PII exfiltration confirmed — 5M user records exfiltrated via compromised key", "ticket": { "ticket_id": "TCK-OUT-028", "priority": "Critical", "assigned_team": "Security", "status": "In Progress" }, "system_metrics": { "response_time_ms": 2, "cpu_usage_pct": 100, "memory_usage_mb": 32000 } },
+  { "timestamp": "2026-04-09T18:01:20", "log_id": "LOG-OUT-029", "user_id": "DEV-25", "team": "Infrastructure", "module_accessed": "Terraform", "action": "Infrastructure Provision", "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "Terraform destroy ran on production — 80 resources deleted in 3 minutes", "ticket": { "ticket_id": "TCK-OUT-029", "priority": "Critical", "assigned_team": "DevOps", "status": "Open" }, "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 0 } },
+  { "timestamp": "2026-04-09T18:03:00", "log_id": "LOG-OUT-030", "user_id": "DEV-36", "team": "Search", "module_accessed": "Recommendation Engine", "action": "Search Query", "issue_detected": true, "issue_type": "Indexing Error", "error_code": "SEARCH_FAIL", "error_message": "Recommendation model serving crashed — all users getting empty results", "ticket": { "ticket_id": "TCK-OUT-030", "priority": "Critical", "assigned_team": "Search", "status": "Open" }, "system_metrics": { "response_time_ms": 68000, "cpu_usage_pct": 99, "memory_usage_mb": 31000 } },
+  { "timestamp": "2026-04-09T18:05:10", "log_id": "LOG-OUT-031", "user_id": "DEV-47", "team": "Frontend", "module_accessed": "Mobile App", "action": "Render Page", "issue_detected": true, "issue_type": "UI Bug", "error_code": "UI_RENDER_FAIL", "error_message": "Mobile app crashes on launch for all iOS users after bad deploy", "ticket": { "ticket_id": "TCK-OUT-031", "priority": "Critical", "assigned_team": "Frontend", "status": "Open" }, "system_metrics": { "response_time_ms": 42000, "cpu_usage_pct": 92, "memory_usage_mb": 24800 } },
+  { "timestamp": "2026-04-09T18:07:00", "log_id": "LOG-OUT-032", "user_id": "DEV-58", "team": "Backend", "module_accessed": "Shipping Service", "action": "Shipment Tracking", "issue_detected": true, "issue_type": "Database Failure", "error_code": "500_DB_ERROR", "error_message": "Shipping DB connection pool fully exhausted — 0 available connections for 90 min", "ticket": { "ticket_id": "TCK-OUT-032", "priority": "Critical", "assigned_team": "Database", "status": "Open" }, "system_metrics": { "response_time_ms": 61000, "cpu_usage_pct": 98, "memory_usage_mb": 30100 } },
+  { "timestamp": "2026-04-09T18:09:20", "log_id": "LOG-OUT-033", "user_id": "DEV-69", "team": "Payment", "module_accessed": "Currency Service", "action": "Currency Conversion", "issue_detected": true, "issue_type": "Payment Failure", "error_code": "502_BAD_GATEWAY", "error_message": "FX rate feed dead for 2h — all international transactions blocked", "ticket": { "ticket_id": "TCK-OUT-033", "priority": "Critical", "assigned_team": "Payment", "status": "Open" }, "system_metrics": { "response_time_ms": 73000, "cpu_usage_pct": 96, "memory_usage_mb": 27200 } },
+  { "timestamp": "2026-04-09T18:11:00", "log_id": "LOG-OUT-034", "user_id": "DEV-70", "team": "Infrastructure", "module_accessed": "Auto Scaling", "action": "Scale Out", "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "Auto-scaler runaway — spun 500 extra instances, blew cloud quota", "ticket": { "ticket_id": "TCK-OUT-034", "priority": "Critical", "assigned_team": "DevOps", "status": "Open" }, "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 32000 } },
+  { "timestamp": "2026-04-09T18:13:10", "log_id": "LOG-OUT-035", "user_id": "DEV-81", "team": "Security", "module_accessed": "Cloud IAM", "action": "Role Assignment", "issue_detected": true, "issue_type": "Security Threat", "error_code": "DDOS_ALERT", "error_message": "Admin IAM role assigned to external account — full cloud access granted", "ticket": { "ticket_id": "TCK-OUT-035", "priority": "Critical", "assigned_team": "Security", "status": "In Progress" }, "system_metrics": { "response_time_ms": 4, "cpu_usage_pct": 100, "memory_usage_mb": 31900 } },
+  { "timestamp": "2026-04-09T18:15:00", "log_id": "LOG-OUT-036", "user_id": "DEV-93", "team": "Backend", "module_accessed": "Bulk Import Service", "action": "Data Import", "issue_detected": true, "issue_type": "Database Failure", "error_code": "500_DB_ERROR", "error_message": "Bulk import corrupted 3M product records — catalog completely broken", "ticket": { "ticket_id": "TCK-OUT-036", "priority": "Critical", "assigned_team": "Database", "status": "Open" }, "system_metrics": { "response_time_ms": 87000, "cpu_usage_pct": 100, "memory_usage_mb": 32000 } },
+  { "timestamp": "2026-04-09T18:17:20", "log_id": "LOG-OUT-037", "user_id": "DEV-15", "team": "Auth", "module_accessed": "Admin Panel", "action": "Admin Login", "issue_detected": true, "issue_type": "Authentication Failure", "error_code": "401_UNAUTHORIZED", "error_message": "Admin panel locked out due to failed HSM auth — no admin access possible", "ticket": { "ticket_id": "TCK-OUT-037", "priority": "Critical", "assigned_team": "Auth", "status": "Open" }, "system_metrics": { "response_time_ms": 77000, "cpu_usage_pct": 99, "memory_usage_mb": 29700 } },
+  { "timestamp": "2026-04-09T18:19:00", "log_id": "LOG-OUT-038", "user_id": "DEV-26", "team": "Search", "module_accessed": "Search Engine", "action": "Wildcard Search", "issue_detected": true, "issue_type": "Indexing Error", "error_code": "SEARCH_FAIL", "error_message": "Wildcard query triggered full cluster scan — all nodes pegged at 100% CPU", "ticket": { "ticket_id": "TCK-OUT-038", "priority": "Critical", "assigned_team": "Search", "status": "Open" }, "system_metrics": { "response_time_ms": 95000, "cpu_usage_pct": 100, "memory_usage_mb": 31400 } },
+  { "timestamp": "2026-04-09T18:21:10", "log_id": "LOG-OUT-039", "user_id": "DEV-37", "team": "Frontend", "module_accessed": "Checkout Page", "action": "Render Page", "issue_detected": true, "issue_type": "UI Bug", "error_code": "UI_RENDER_FAIL", "error_message": "Payment UI fully broken after deploy — users cannot complete purchases", "ticket": { "ticket_id": "TCK-OUT-039", "priority": "Critical", "assigned_team": "Frontend", "status": "Open" }, "system_metrics": { "response_time_ms": 51000, "cpu_usage_pct": 94, "memory_usage_mb": 26500 } },
+  { "timestamp": "2026-04-09T18:23:00", "log_id": "LOG-OUT-040", "user_id": "DEV-48", "team": "Infrastructure", "module_accessed": "Replica Set", "action": "Failover", "issue_detected": true, "issue_type": "System Crash", "error_code": "SERVER_DOWN", "error_message": "MongoDB primary election loop — replica set stuck, no writes possible for 2h", "ticket": { "ticket_id": "TCK-OUT-040", "priority": "Critical", "assigned_team": "DevOps", "status": "In Progress" }, "system_metrics": { "response_time_ms": 0, "cpu_usage_pct": 100, "memory_usage_mb": 0 } }
+]
